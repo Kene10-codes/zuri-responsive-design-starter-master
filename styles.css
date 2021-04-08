@@ -377,7 +377,8 @@ ul.nav-links li a {
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 25px;
+    padding: 25px 0 25px 15px;
+    font-weight: 300;
 }
 
 .menu-icon {
@@ -422,11 +423,13 @@ ul.nav-links li a {
 
 .menu-btn:checked ~ .menu-icon span::before {
     transform: rotate(-45deg);
+    background: #E44C65;
     top: 0;
 }
 
 .menu-btn:checked ~ .menu-icon span::after {
     transform: rotate(45deg);
+    background: #E44C65;
     top: 0;
 }
 
@@ -471,6 +474,10 @@ textarea {
 }
 
 @media screen and (max-width: 375px) {
+div.hero-section {
+        padding: 4rem 2.5rem 2.5rem 2.5rem;
+}
+    
 div.background {
     width: auto;
     height: 420px;
